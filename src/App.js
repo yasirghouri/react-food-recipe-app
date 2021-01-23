@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { v4 as uuidv4 } from "uuid";
 import "./App.css";
 import Recipe from "./components/Recipe/Recipe";
 
@@ -35,8 +34,8 @@ function App() {
       </form>
       <div className="recipes">
         {recipes &&
-          recipes.map((recipe) => {
-            return <Recipe key={uuidv4} recipe={recipe} />;
+          recipes.map((recipe, idx) => {
+            return <Recipe key={idx} recipe={recipe} />;
           })}
       </div>
     </div>

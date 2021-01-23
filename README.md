@@ -5,4 +5,3 @@ We are using Edamam Recipe Search API for this project.
 ## Package Dependencies
 
 1. npm i axios
-2. npm i uuid
